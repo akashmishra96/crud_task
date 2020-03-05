@@ -2,19 +2,21 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();  
-
+ 
+// set up our express application
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-require("./modules/db.connect");
 
+//  database configuration 
+require("./config/db.connect");
+
+// load our routes
 const User = require('./routes/user.route');
-
-// app.use('/products', product);
 app.use('/user',User);
 
 
-
-let port = 1234;
+// server configuration
+let port = 3000;
 
 app.listen(port, () => {
     console.log('listening on ' + port);
