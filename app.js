@@ -15,7 +15,7 @@ const User = require('./routes/user.route');
 app.use('/user',User);
 
 
-// server configuration
+// server configuration 
 let port = 3000;
 
 app.listen(port, () => {
