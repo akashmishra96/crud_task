@@ -23,7 +23,7 @@ exports.user_create = function (req, res) {
                is_verified    : req.body.is_verified,
            is_profile_created : req.body.is_profile_created,
                 created_on    : req.body.created_on,
-                social_id     : req.body. social_id,
+                social_id     : req.body.social_id,
                 social_type   : req.body.social_type
                 
           }
@@ -62,6 +62,6 @@ exports.user_delete = function (req, res) {
 
 
 
-exports.test = function (req, res) {
-     res.send('Greetings from the Test controller!');
-};
+//exports.test = function (req, res) {
+//     res.send('Greetings from the Test controller!');
+//};
