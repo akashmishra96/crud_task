@@ -62,6 +62,4 @@ exports.user_delete = function (req, res) {
 
 
 
-exports.test = function (req, res) {
-     res.send('Greetings from the Test controller!');
-};
+
